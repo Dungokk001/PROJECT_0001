@@ -4,11 +4,12 @@
 
 :root {
   --font-heading: "Sen", sans-serif;
-  --primary-color: #FFB900;
+  --primary-color: #ffb900;
 }
 
 html {
   font-size: 62.5%;
+  background-color: #f5f5f5;
 }
 
 body {
@@ -66,8 +67,6 @@ a {
   margin-right: auto;
 }
 
-
-
 .header .body {
   font-size: 1.6rem;
   display: flex;
@@ -109,13 +108,54 @@ a {
 }
 
 .hero {
-  height: 800px;
-  padding: 56px 0 56px;
-  background-color: #fffcf4;
+  display: block;
 }
 
 .hero .body {
   display: flex;
+  padding: 56px 135px;
+  background-color: #fffcf4;
+}
+
+.hero .body-review {
+  display: block;
+  background-color: transparent;
+  justify-content: center;
+}
+
+.hero .body-review .top-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 55px;
+}
+
+.hero .body-review .bottom-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.hero .body-review .box-review {
+  display: block;
+  width: 370px;
+  height: 466px;
+  border: 1px solid #e2dfda;
+  border-radius: 12px;
+}
+
+.hero .main_content_hero {
+  width: 1440px;
+}
+
+.hero .main_content_hero1 {
+  margin-top: 1092px;
+  width: 1440px;
+}
+
+.body-review .main-review {
+  margin: 16px 22px 22px 22px;
+  width: 326px;
+  height: 150px;
 }
 
 /* ================= hero left ================= */
@@ -149,7 +189,7 @@ a {
   align-items: center;
 }
 
-.hero .hero_summary .item +.item {
+.hero .hero_summary .item + .item {
   margin-top: 22px;
 }
 
@@ -160,15 +200,15 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #FFF9E8;
+  background-color: #fff9e8;
 }
 
-.hero_summary .icon2{
-  background-color: #FCEFFF;
+.hero_summary .icon2 {
+  background-color: #fcefff;
 }
 
 .hero_summary .icon3 {
-  background-color: #EBEAFF;
+  background-color: #ebeaff;
 }
 
 .hero_summary .info {
@@ -178,7 +218,7 @@ a {
 .hero_summary .lable {
   font-size: 1.6rem;
   line-height: 1.86rem;
-  color: #5F5B53;
+  color: #5f5b53;
 }
 
 .hero_summary .title {
@@ -205,10 +245,9 @@ a {
 }
 
 .hero .desc {
-  color: #5F5B53;
+  color: #5f5b53;
   font-size: 1.8rem;
   line-height: 3rem;
-  padding-top: 22px;
 }
 
 .hero .cta-group {
@@ -254,7 +293,7 @@ a {
   margin-top: 48px;
 }
 
-.hero .last-ct strong{
+.hero .last-ct strong {
   padding-right: 14px;
   font-weight: 700;
   font-size: 4.4rem;
@@ -266,10 +305,123 @@ a {
   margin-left: 28px;
 }
 
-.hero .desc1{
+.hero .desc1 {
   padding-top: 0px;
 }
 
-.hero .desc2{
+.hero .desc2 {
   padding-top: 8px;
+}
+
+/* ===================== Hero 1 tab ==================== */
+.hero .body-review .content-tab {
+  width: 458px;
+  height: 124px;
+}
+
+.hero .body-review .tab .but {
+  border-radius: 50px;
+  width: 40px;
+  height: 40px;
+  border: none;
+}
+
+.hero .body-review .tab .but strong {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero .body-review .tab .but:first-child {
+  border: 1px solid #ffb900;
+  background-color: #ffffff;
+  margin-right: 18px;
+}
+
+.hero .body-review .tab .but:last-child {
+  background-color: #ffb900;
+}
+
+.hero .body-review .content-tab .heading {
+  font-weight: 700;
+  font-size: 3.8rem;
+  line-height: 4.8rem;
+}
+
+.hero .body-review .content-tab .desc {
+  display: inline-block;
+  margin-top: 16px;
+  font-weight: 400;
+  font-size: 1.8rem;
+  line-height: 3rem;
+}
+
+/* ================== review ==================== */
+
+.hero .box-review .ct-star-rv p {
+  width: 48px;
+  height: 28px;
+  color: #fea31b;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero .box-review .ct-star-rv p strong {
+  margin-left: 6px;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 2.8rem;
+}
+
+.hero .box-review .ct-star-rv {
+  margin-bottom: 6px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hero .box-review .ct-star-rv .heading {
+  font-weight: 600;
+  font-size: 1.8rem;
+  line-height: 3rem;
+}
+
+.hero .box-review .main-review .desc {
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 2.6rem;
+}
+
+.hero .box-review .money-buy {
+  margin-top: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hero .box-review .money-buy .heading {
+  font-weight: 600;
+  font-size: 1.8rem;
+  line-height: 3rem;
+}
+
+.box-review .money-buy .btn-buy strong {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box-review .money-buy .btn-buy {
+  width: 118px;
+  height: 50px;
+}
+
+.box-review .money-buy .btn-buy1 {
+  background-color: #ffb900;
+}
+
+.hero .body-review .box-review:first-child {
+  border: none;
+  background-color: #ffffff;
 }
